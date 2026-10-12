@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#071018">
   <title>The Drifting Land | Loading</title>
   <link rel="stylesheet" href="style.css">
@@ -55,6 +55,16 @@
       <span class="build">PRE-RELEASE BUILD <b>0.1</b></span>
     </footer>
   </main>
+  <script>
+    // This page is a non-interactive loading screen, so block touch-drag and
+    // wheel gestures that could move the document on mobile browsers.
+    document.addEventListener('touchmove', function (event) {
+      event.preventDefault();
+    }, { passive: false });
+    document.addEventListener('wheel', function (event) {
+      event.preventDefault();
+    }, { passive: false });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
