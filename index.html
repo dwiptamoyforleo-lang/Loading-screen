@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071018">
+  <title>The Drifting Land | Loading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="loading-screen" aria-label="The Drifting Land loading screen">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="topline">
+      <span class="eyebrow">FIELD EXPEDITION <b>01</b></span>
+      <span class="connection"><i></i> WORLD SIGNAL STABLE</span>
+    </div>
+
+    <section class="content">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" role="presentation">
+          <circle class="ring ring-outer" cx="50" cy="50" r="43"/>
+          <circle class="ring ring-inner" cx="50" cy="50" r="31"/>
+          <path class="compass" d="M50 14 L57 44 L86 50 L57 56 L50 86 L43 56 L14 50 L43 44 Z"/>
+          <circle class="core" cx="50" cy="50" r="5"/>
+        </svg>
+      </div>
+      <p class="kicker">AN UNCHARTED WORLD AWAITS</p>
+      <h1>THE DRIFTING <span>LAND</span></h1>
+      <p class="subtitle">Every horizon hides a story.</p>
+
+      <div class="loading-panel">
+        <div class="progress-heading">
+          <span id="status">Preparing expedition</span>
+          <span id="percent">0%</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="Loading progress"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressbar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-glint"></div>
+        </div>
+        <div class="progress-foot">
+          <span id="substatus">Mapping the unknown</span>
+          <span class="loading-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <span class="tip-label">TRAIL NOTE <b id="tip-number">01</b></span>
+        <p id="tip">Look for unusual landmarks. They often lead to places missing from every map.</p>
+      </div>
+    </section>
+
+    <footer class="bottomline">
+      <span>EXPLORE <i>·</i> ADAPT <i>·</i> DISCOVER</span>
+      <span class="build">PRE-RELEASE BUILD <b>0.1</b></span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
